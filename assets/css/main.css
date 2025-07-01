@@ -614,6 +614,18 @@ textarea {
   -webkit-animation: slideDown 0.5s cubic-bezier(0.17, 0.67, 0, 1) forwards;
           animation: slideDown 0.5s cubic-bezier(0.17, 0.67, 0, 1) forwards;
 }
+
+.top::after {
+    content: "";
+    mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" style="stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 162 13"><path d="M40.037 200.588s13.105-10.872 19.76-10.872c6.655 0 19.628 10.872 20.168 10.872-.54 0 13.251-10.872 19.906-10.872 6.654 0 20.071 10.872 20.021 10.872.05 0 13.398-10.872 20.052-10.872 6.655 0 19.868 10.872 19.876 10.872-.008 0 13.543-10.872 20.198-10.872 6.654 0 19.368 10.872 19.73 10.872" style="fill:none;stroke:%23000;stroke-width:2px;stroke-dasharray:4,4,0,0" transform="translate(-39.037 -188.716)"/></svg>') repeat-x;
+    position: absolute;
+    top: var(--scallop-position);
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: var(--gray);
+}
+
 @-webkit-keyframes slideDown {
   from {
     opacity: 0;

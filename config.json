@@ -125,6 +125,14 @@
       "type": "text"
     },
     {
+      "name": "scallopPosition",
+      "label": "Scallop Position",
+      "group": "Layout",
+      "note": "Adjust the position of the scallops as a distance from the top of the screen.",
+      "value": "95px",
+      "type": "text"
+    },
+    {
       "name": "separator",
       "type": "separator",
       "label": "Hero section",

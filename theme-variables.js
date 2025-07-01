@@ -470,6 +470,7 @@ var generateThemeVariables = function (params) {
       --page-width:         ${params.pageWidth};
       --entry-width:        ${params.entryWidth};
       --navbar-height:      4.4rem;
+      --scallop-position:   ${params.scallopPosition};
       --border-radius:      ${params.borderRadius}px;
       --baseline:           ${params.baseline};
       --gallery-gap:        ${params.galleryItemGap};
