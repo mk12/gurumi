@@ -130,6 +130,11 @@ var generateThemeVariables = function (params) {
       weight: "300 900",
       hasItalic: false,
     },
+    gabriela: {
+      name: "Gabriela",
+      family: "'Gabriela', serif",
+      weight: "400",
+    },
     glory: {
       name: "Glory",
       family: "'Glory', sans-serif",
