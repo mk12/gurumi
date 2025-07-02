@@ -125,14 +125,6 @@
       "type": "text"
     },
     {
-      "name": "scallopPosition",
-      "label": "Scallop Position",
-      "group": "Layout",
-      "note": "Adjust the position of the scallops as a distance from the bottom of the navbar.",
-      "value": "10px",
-      "type": "text"
-    },
-    {
       "name": "separator",
       "type": "separator",
       "label": "Hero section",
@@ -400,10 +392,17 @@
       "type": "checkbox"
     },
     {
+      "name": "headerFooterColor",
+      "label": "Header/footer color",
+      "group": "Colors",
+      "value": "#F9F0F1",
+      "type": "colorpicker"
+    },
+    {
       "name": "backgroundColor",
       "label": "Background color",
       "group": "Colors",
-      "value": "#F9F0F1",
+      "value": "#FFFFFF",
       "type": "colorpicker"
     },
     {

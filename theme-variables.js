@@ -470,7 +470,6 @@ var generateThemeVariables = function (params) {
       --page-width:         ${params.pageWidth};
       --entry-width:        ${params.entryWidth};
       --navbar-height:      4.4rem;
-      --scallop-position:   calc(${params.navbarHeight} + ${params.scallopPosition});
       --border-radius:      ${params.borderRadius}px;
       --baseline:           ${params.baseline};
       --gallery-gap:        ${params.galleryItemGap};
@@ -505,6 +504,7 @@ var generateThemeVariables = function (params) {
         --gray:               #57585a;
         --light:              #CACBCF;
         --lighter:            #F3F3F3;
+        --hf-bg:              ${params.headerFooterColor};
         --page-bg:            ${params.backgroundColor};
         --color:              ${params.primaryColor};
         --scallop-color:      ${params.scallopColor};
