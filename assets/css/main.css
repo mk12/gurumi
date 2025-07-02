@@ -1976,8 +1976,8 @@ textarea {
   /* border-top: 1px solid var(--light); */
   font-size: 0.9374999997rem;
   /* padding: calc(var(--baseline) * 9 + 1vw) 0 calc(var(--baseline) * 6 + 1vw); */
-  margin: calc(var(--baseline) * 8 + 1vw) auto 0;
-  max-width: var(--page-width);
+  margin: calc(var(--baseline) * 8 + 1vw) 0 0;
+  /* max-width: var(--page-width); */
   text-align: center;
 }
 .footer--glued {
