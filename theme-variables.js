@@ -470,7 +470,7 @@ var generateThemeVariables = function (params) {
       --page-width:         ${params.pageWidth};
       --entry-width:        ${params.entryWidth};
       --navbar-height:      4.4rem;
-      --scallop-position:   ${params.scallopPosition};
+      --scallop-position:   calc(${params.navbarHeight} + ${params.scallopPosition});
       --border-radius:      ${params.borderRadius}px;
       --baseline:           ${params.baseline};
       --gallery-gap:        ${params.galleryItemGap};
@@ -493,6 +493,9 @@ var generateThemeVariables = function (params) {
 
     `;
 
+  // Amy doesn't want dark mode.
+  params.colorScheme = "light";
+
   if (params.colorScheme !== "dark") {
     output += `
         --white:              #FFFFFF;
@@ -504,13 +507,14 @@ var generateThemeVariables = function (params) {
         --lighter:            #F3F3F3;
         --page-bg:            ${params.backgroundColor};
         --color:              ${params.primaryColor};
-        --text-color:         #17181E;
-        --headings-color:     #17181E;
-        --link-color:         #17181E;
+        --scallop-color:      ${params.scallopColor};
+        --text-color:         ${params.textColor};
+        --headings-color:     ${params.textColor};
+        --link-color:         ${params.textColor};
         --link-color-hover:   ${params.primaryColor};
-        --nav-link-color:     #17181E;
-        --nav-link-color-hover: #17181E;
-        --logo-color:         #17181E;
+        --nav-link-color:     ${params.textColor};
+        --nav-link-color-hover: ${params.textColor};
+        --logo-color:         ${params.textColor};
         --highlight-color:    #FFC700;
         --info-color:         #67B1F3;
         --success-color:      #00A563;

@@ -623,7 +623,7 @@ textarea {
     left: 0;
     right: 0;
     height: 12px;
-    background: var(--gray);
+    background: var(--scallop-color);
 }
 
 @-webkit-keyframes slideDown {

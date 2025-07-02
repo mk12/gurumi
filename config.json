@@ -128,8 +128,8 @@
       "name": "scallopPosition",
       "label": "Scallop Position",
       "group": "Layout",
-      "note": "Adjust the position of the scallops as a distance from the top of the screen.",
-      "value": "95px",
+      "note": "Adjust the position of the scallops as a distance from the bottom of the navbar.",
+      "value": "10px",
       "type": "text"
     },
     {
@@ -400,53 +400,31 @@
       "type": "checkbox"
     },
     {
-      "name": "colorScheme",
-      "label": "Select color scheme",
-      "group": "Colors",
-      "note": "<br>The auto color scheme feature automatically adjusts the color scheme of the interface to match the user's operating system settings. If the operating system does not support this feature, the light version of the color scheme is used instead",
-      "value": "auto",
-      "type": "radio",
-      "options": [
-        {
-          "label": "Light",
-          "value": "light"
-        },
-        {
-          "label": "Dark",
-          "value": "dark"
-        },
-        {
-          "label": "Auto",
-          "value": "auto"
-        }
-      ]
-    },
-    {
       "name": "backgroundColor",
-      "label": "Background color (Light mode)",
+      "label": "Background color",
       "group": "Colors",
       "value": "#F9F0F1",
       "type": "colorpicker"
     },
     {
-      "name": "backgroundDarkColor",
-      "label": "Background color (Dark mode)",
+      "name": "textColor",
+      "label": "Text color",
       "group": "Colors",
-      "value": "#402726",
+      "value": "#594027",
       "type": "colorpicker"
     },
     {
       "name": "primaryColor",
-      "label": "Primary color (Light mode)",
+      "label": "Primary color",
       "group": "Colors",
       "value": "#D73A42",
       "type": "colorpicker"
     },
     {
-      "name": "primaryDarkColor",
-      "label": "Primary color (Dark mode)",
+      "name": "scallopColor",
+      "label": "Scallop color",
       "group": "Colors",
-      "value": "#FFC074",
+      "value": "#CF717A",
       "type": "colorpicker"
     },
 
@@ -805,7 +783,7 @@
       "name": "fontHeadings",
       "label": "Headings font (H1-H6)",
       "group": "Fonts",
-      "value": "system-ui",
+      "value": "gabriela",
       "type": "select",
       "options": [
         {

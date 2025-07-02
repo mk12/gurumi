@@ -1,29 +1,3 @@
-// Sticky header position on page scrolling up
-const header = document.querySelector('.js-header');
-const stickyClass = 'sticky';
-let lastScrollTop = 0;
-let isWaiting = false;
-
-window.addEventListener('scroll', () => {
-    if (!isWaiting) {
-        window.requestAnimationFrame(() => {
-            let currentScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll > lastScrollTop) {
-                header.classList.remove(stickyClass);
-            } else if (currentScroll < lastScrollTop && currentScroll > 0) {
-                header.classList.add(stickyClass);
-            } else if (currentScroll <= 0) {
-                header.classList.remove(stickyClass);
-            }
-
-            lastScrollTop = currentScroll;
-            isWaiting = false;
-        });
-        isWaiting = true;
-    }
-}, false);
-
 // Dropdown menu
 (function (menuConfig) {
     /**
